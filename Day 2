@@ -1,0 +1,337 @@
+#include<iostream>
+#include<bits/stdc++.h>
+#include<conio.h>
+#include<ostream>
+#include <thread>
+using namespace std;
+
+// int main(){
+//     float a,b,c;
+//     cin>>a;
+//     cin>>b;
+//     cin>>c;
+    
+//     if(a>b){
+//         if(a>c) cout<<a<<endl;
+//         else cout<<c<<endl;
+//     }
+//     else {
+//         if(b>c) cout<<b<<endl;
+//         else cout<<c;
+//     }
+//     return 0;
+
+
+// }
+
+
+
+// int main(){
+//    bool red_light{false};
+//    bool green_light{true};
+//    if(red_light==true){
+//       cout<<"Stop!!"<<endl;
+//    }
+//    else{
+//       cout<<"Go!!"<<endl;
+//    }
+//    if(green_light==true){
+//       cout<<"The light is green "<<endl;
+//    }
+//    else{
+//       cout<<"The light is not green "<<endl;
+//    }
+
+   
+   
+//    cout<<sizeof(bool)<<endl;
+
+
+//    //printing out a bool
+//    //1 -->> true
+//    //0 -->> false
+//    cout << endl;
+//    cout<<"red light : "<<red_light<<endl;
+//    cout<<"green light : "<<green_light<<endl;
+//    cout<<boolalpha;
+//    cout<<"red_light : "<<red_light<<endl;
+//    cout<<"green_light : "<<green_light<<endl;
+
+
+
+//    return 0;
+// }
+
+
+
+// Tools
+
+// const int Pen{ 10 };
+
+// const int Marker{ 20 };
+
+// const int Eraser{ 30 };
+
+// const int Rectangle{ 40 };
+
+// const int Circle{ 50 };
+
+// const int Ellipse{ 60 };
+
+// int main(){
+
+//   int tool {Eraser};
+
+//   switch (tool)
+
+//   {
+
+//     case Pen : {
+
+//        cout << "Active tool is Pen" << endl;
+
+//     }
+
+//     break;
+
+//     case Marker : {
+
+//        cout << "Active tool is Marker" << endl;
+
+//     }
+
+//     break;
+
+//  //if (tool==Eraser || tool==Rectangle || tool==Circle) {
+
+//    //cout << "Drawing Shapes" << endl;
+
+//  //}
+
+//     case Eraser :
+
+//     case Rectangle :
+
+//     case Circle : {
+
+//        cout << "Drawing Shapes" << endl;
+
+//     }
+
+//     break;
+
+//     case Ellipse : {
+
+//        cout << "Active tool is Ellipse" << endl;
+
+//     }
+
+//     break;
+
+//     default: {
+
+//       cout << "No match found" << endl;
+
+//     }
+
+//       break;
+
+//   }
+
+//   cout << "Moving on" << endl;
+
+//   /*
+
+//   // Condition can only be integer of enum (We'll learn about enums later in the course)
+
+//   string name {"John"};
+
+//   switch (name) // Compiler error!
+
+//   {
+
+//   }
+
+//   */
+
+//   return 0;
+
+// }
+
+
+
+
+// int main(){
+//     cout<<"hi";
+//     this_thread::sleep_for(chrono::seconds(3));
+//     cout<<"hi";
+//     return 0;
+// }
+
+
+// void add(float x , float y){
+//     cout<<x+y<<endl;
+// }
+// void add(float x, float y, float z){
+//     cout<<x+y+z<<endl;
+// }
+// void div(float x, float y){
+//     cout<<x/y<<endl;
+// }
+// void sub(float x, float y){
+//     cout<<x-y<<endl;
+// }
+// void mul(float x, float y){
+//     cout<<x*y<<endl;
+// }
+// void rem(int x, int y){
+//     cout<<x%y<<endl;
+// }
+// int main(){
+//     // float number1;
+//     // cout<<"Enter the first number :";
+//     // cin>>number1;
+//     // float number2;
+//     // cout<<"Enter the first number :";
+//     // cin>>number2;
+//     // add(number1,number2);
+//     add(7,7);
+//     sub(7,7);
+//     mul(7,7);
+//     div(7,7);
+//     rem(7,7);
+//     add(7,7,7);
+    
+//     return 0;
+// }
+
+
+//why do we need user defined functions
+// ans we need user defined functions to produce a specific output for some or none input that if the method used to produce the desired output in not defined in the predefined functions
+
+
+//function overloading is a method used to use in  a parameterised function for different numbers of parameters, it performs different instructions according to the definitions only the function name remains same
+
+
+// int main() {
+//     int start, end;
+//     cin >> start >> end;
+
+//     for (int i = start; i <= end; ++i) {
+//         switch (i) {
+//             case 0:
+//                 cout << "zero" <<endl;
+//                 break;
+//             case 1:
+//                 cout << "one" <<endl;
+//                 break;
+//             case 2:
+//                 cout << "two" <<endl;
+//                 break;
+//             case 3:
+//                 cout << "three" <<endl;
+//                 break;
+//             case 4:
+//                 cout << "four" <<endl;
+//                 break;
+//             case 5:
+//                 cout << "five" <<endl;
+//                 break;
+//             case 6:
+//                 cout << "six" <<endl;
+//                 break;
+//             case 7:
+//                 cout << "seven" <<endl;
+//                 break;
+//             case 8:
+//                 cout << "eight" <<endl;
+//                 break;
+//             case 9:
+//                 cout << "nine" <<endl;
+//                 break;
+//             default:
+//                 cout << (i % 2 == 0 ? "even" : "odd") <<endl;
+//         }
+//     }
+
+//     return 0;
+// }
+
+
+
+
+// int main(){
+//     label:
+//     float attendance;
+//     float classes;
+//     float classes_attended;
+//     cin>>classes;
+//     cin>>classes_attended;
+//     if(classes>=classes_attended){
+//     attendance=(classes_attended/classes)*100;}
+//     else{
+//         cout<<"enter right data :"<<endl;
+//         goto label;
+//     }
+//     if(attendance>75){
+//         cout<<"can attend exam with attendance percentage :"<<attendance<<"%"<<endl;
+//     }
+//     else{
+//         cout<<"cant attend exam with attendance percentage :"<<attendance<<"%"<<endl;
+//     }
+//     return 0;
+
+// }
+
+
+// 2) If
+
+//  x = 2 y = 5 z = 0
+
+//  then find values of the following expressions:
+
+//  a. x == 2 b. x != 5
+
+//  c. x != 5 && y >= 5 d. z != 0 || x == 2
+
+//  e. !(y < 10)
+
+float rupeestopound(float rupees){
+    return rupees/106.99;
+}
+float poundtorupees(float pound){
+    return pound*106.99;
+}
+float rupeestodollar(float rupees){
+    return rupees/83.52;
+}
+float dollartorupees(float dollar){
+    return dollar*83.52;
+}
+float rupeestoyuan(float rupees){
+    return rupees/11.48;
+}
+float yuantorupees(float yuan){
+    return yuan*11.48;
+}
+int main(){
+    float rupees;
+    cout<<"Enter the amount in rupees : ";
+    cin>>rupees;
+    cout<<"The amount in pound is : "<<rupeestopound(rupees)<<endl;
+    cout<<"The amount in dollar is : "<<rupeestodollar(rupees)<<endl;
+    cout<<"The amount in yuan is : "<<rupeestoyuan(rupees)<<endl;
+    float pound;
+    cout<<"Enter the amount in pound : ";
+    cin>>pound;
+    cout<<"The amount in rupees is : "<<poundtorupees(pound)<<endl;
+    float dollar;
+    cout<<"Enter the amount in dollar : ";
+    cin>>dollar;
+    cout<<"The amount in rupees is : "<<dollartorupees(dollar)<<endl;
+    float yuan;
+    cout<<"Enter the amount in yuan : ";
+    cin>>yuan;
+    cout<<"The amount in rupees is : "<<yuantorupees(yuan)<<endl;
+    return 0;
+}
