@@ -112,3 +112,19 @@ int main() {
     return 0;
 }
 */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+    vector<int> arr = {1, 2, 3, 4, 5}; // Example array
+
+    for(size_t i = 0; i < arr.size() - 1; ++i) {
+        int consecutiveSum = arr[i] + arr[i + 1];
+        cout << "Sum of elements " << arr[i] << " and " << arr[i + 1] << " is:" << consecutiveSum << std::endl;
+    } 
+
+    return 0;
+}
+
